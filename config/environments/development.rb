@@ -36,5 +36,7 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-
+  # Twitter Consumer/API Key and Consumer/API Secret goes here
+  config.twitter_key = "0FI92mmNh0A8nGXP89ScQ5FPD"
+  config.twitter_secret = "Z9JQQnWD8CcLTFGz0WdACBRxJh211KyytJQIhYxgO8cCCg1gET"
 end
