@@ -1,5 +1,3 @@
-#READ ME
-
 #Live
 <a href="http://sswbelser-twitter.herokuapp.com/" target="_blank">Check it out on Heroku!</a>
 
