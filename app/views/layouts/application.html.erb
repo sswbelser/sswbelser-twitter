@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SSWBelser Twitter</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Bootstrap Optional CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<%= stylesheet_link_tag 'application', media: 'all' %>
+
+	<%= csrf_meta_tags %>
+</head>
+<body>
+
+	<%= render "layouts/navbar" %>
+
+	<div class="container text-center">
+		<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, class: "alert #{name == 'error' ? 'alert-danger' : 'alert-info'}" %>
+		<% end %>
+	</div>
+
+	<div class="container">
+		<%= yield %>
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<%= javascript_include_tag 'application' %>
+
+</body>
+</html>

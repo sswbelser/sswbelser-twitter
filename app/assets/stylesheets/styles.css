@@ -1,0 +1,16 @@
+.tweet-heading li {
+	display: inline;
+}
+
+#new_tweet .error {
+	color: red;
+}
+
+#logout_button {
+	margin-right: 1px;
+	margin-left: 10px;
+}
+
+#login_button {
+	margin-right: 1px;
+}
