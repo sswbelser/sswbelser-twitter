@@ -1,3 +1,4 @@
+// jQuery Validate script
 $(function () {
 	$("#new_tweet").validate({
 		rules: {

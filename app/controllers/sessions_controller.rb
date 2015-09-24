@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+
   # creations session based on the omniauth data
   def create
     user = User.from_omniauth(env["omniauth.auth"])
@@ -13,4 +14,5 @@ class SessionsController < ApplicationController
     flash[:error] = "Successfully logged out"
     redirect_to root_path
   end
+
 end

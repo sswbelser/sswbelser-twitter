@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+
   # uses omniauth to check Twitter and log in to app
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid).permit!).first_or_initialize.tap do |user|
@@ -32,4 +33,5 @@ class User < ActiveRecord::Base
     end
     return client.home_timeline
   end
+
 end

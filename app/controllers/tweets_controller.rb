@@ -1,4 +1,5 @@
 class TweetsController < ApplicationController
+
   def new
   end
 	
@@ -11,4 +12,5 @@ class TweetsController < ApplicationController
   def twitter_params
     params.require(:tweet).permit(:message)
   end
+
 end

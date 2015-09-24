@@ -11,11 +11,13 @@
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-collapse">
 			<% if current_user %>
-        		<a class="btn navbar-btn navbar-right btn-danger" href="/logout" id="logout_button">Log out</a>
-        		<p class="navbar-text navbar-right">Welcome, <%= current_user.name %></p>
-        	<% else %>
-        		<a class="btn navbar-btn navbar-right btn-default" href="/auth/twitter" id="login_button">Log in to Twitter</a>
-     		<% end %>
+			<!-- renders if user is logged in -->
+				<a class="btn navbar-btn navbar-right btn-danger" href="/logout" id="logout_button">Log out</a>
+				<p class="navbar-text navbar-right">Welcome, <%= current_user.name %></p>
+			<% else %>
+			<!-- renders if user isn't logged in -->
+				<a class="btn navbar-btn navbar-right btn-default" href="/auth/twitter" id="login_button">Log in to Twitter</a>
+			<% end %>
 		</div>
 	</nav>
 </header>
