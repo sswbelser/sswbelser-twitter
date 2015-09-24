@@ -15,4 +15,5 @@ Basic Twitter client app; displays user's home timeline, and allows new tweet cr
 	<li>Bootstrap</li>
 	<li>jQuery Validate</li>
 	<li>Font Awesome</li>
+	<li>Heroku</li>
 </ul>
