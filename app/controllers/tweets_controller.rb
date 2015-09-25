@@ -5,11 +5,13 @@ class TweetsController < ApplicationController
 	
   # creates a new tweet based on the twitter parameters
   def create
+    # makes sure user is logged in
     if current_user
       if current_user.tweet(twitter_params[:message])
         flash[:notice] = "Successfully tweeted!"
         redirect_to root_path
       else
+        # server-side error handling
         flash[:error] = tweet.errors.full_messages.join(', ')
         redirect_to root_path
       end
