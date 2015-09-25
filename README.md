@@ -11,7 +11,7 @@ Basic Twitter client app; displays user's home timeline, and allows new tweet cr
 	<li>Twitter OAuth</li>
 	<li>Twitter API</li>
 	<li>Bootstrap</li>
-	<li>jQuery Validate</li>
 	<li>Font Awesome</li>
+	<li>jQuery Validate</li>
 	<li>Heroku</li>
 </ul>
