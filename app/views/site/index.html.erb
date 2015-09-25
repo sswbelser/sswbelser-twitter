@@ -7,8 +7,7 @@
 		<div class="text-center">
 			<h2>Highlighted Tweets</h2>
 		</div>
-		<hr>
-		<br><br><br>
+		<br><br><br><br>
 		<% current_user.home_timeline.each do |t| %>
 		<!-- renders 20 most recent from user's timeline -->
 			<div class="panel panel-success">
@@ -35,7 +34,7 @@
 		<br>
 		<!-- new tweet button -->
 		<%= link_to 'New Tweet', new_tweet_path, class: "btn btn-primary btn-block" %>
-		<hr>
+		<br>
 		<% current_user.user_timeline.each do |t| %>
 		<!-- renders 20 most recent user's tweets -->
 			<div class="panel panel-warning">
